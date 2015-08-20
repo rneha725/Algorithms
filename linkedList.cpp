@@ -20,23 +20,23 @@ public:
     void append(TYPE); // uses listNode pointer type to be called and inserts at the
     void insertAtFront(TYPE); // inserts at the beginning of the list
     void assignTail(); // assigns the tail of the list to tail pointer, use if you want to update tail for assurance
-    void printLinear(); // prints using linear
-    void printRecursive();
-    int lengthLinear();
-    int lengthRecursive();
+    void printLinear(); // prints using linear function body
+    void printRecursive(); // prints using recursion
+    int lengthLinear(); // gives legth of the linked list using linear body
+    int lengthRecursive(); // returns length using recursion
     TYPE getInfo() {if(this == NULL) return -1; else return info;}
     listNode* getLink() {if(this == NULL) return NULL; else return link;}
-    bool lookupLinear(TYPE);
-    bool lookupRecursive(TYPE);
-    void deleteNode(listNode*&);
-    void deleteNodeFake(listNode*&);
-    listNode* getMiddleNode();
-    listNode* getNth(int);
-    void deleteList();
-    listNode* reverseListRecursive();
-    void reverseListIterative();
-    bool checkLoop();
-    bool checkPalindrome();
+    bool lookupLinear(TYPE); // searches for an element in linked list linearly
+    bool lookupRecursive(TYPE); // searches using recursion
+    void deleteNode(listNode*&); // deleting a given node from linked list
+    void deleteNodeFake(listNode*&); // trick to delete a node
+    listNode* getMiddleNode(); // returns middle node of linked list
+    listNode* getNth(int); // return N-th node of the linked list
+    void deleteList(); // deletes whole list
+    listNode* reverseListRecursive(); // reverses linked list using recusrion
+    void reverseListIterative(); // ...
+    bool checkLoop(); // detects loop in linked list
+    bool checkPalindrome(); //...
     void temp(listNode*); //just a temporary function doing some random stuff...
 }*head = NULL, *tail = head, *globalVar = NULL;
 
