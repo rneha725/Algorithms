@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int GCD(int n, int m)
+{
+	int small = n>m?m:n;
+	int big = n>m?n:m;
+	while(small != 0)
+	{
+		int tmp = big;
+		big = small;
+		small = tmp%small;
+	}
+	return big;
+}
+
+int main()
+{
+	int n, m;
+	cin>>n>>m;
+	cout<<GCD(n,m);
+	return 0;
+}
+
