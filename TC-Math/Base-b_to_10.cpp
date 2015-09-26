@@ -18,5 +18,5 @@ int main()
 {
 	int num, base;
 	cin>>num>>base;
-	cout<<convertInDec(n, base);
+	cout<<convertInDec(num, base);
 }
